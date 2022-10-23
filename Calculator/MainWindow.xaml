@@ -20,7 +20,7 @@
         </StackPanel>
         
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <TextBox x:Name="TextBox1" TextWrapping="Wrap" Text="" Width="385" Margin="0,0,0,10" HorizontalContentAlignment="Right" BorderBrush="LightGray"/>
+            <TextBox x:Name="TextBox1" TextWrapping="Wrap" Text="" Width="385" Margin="0,0,0,10" HorizontalContentAlignment="Right" BorderBrush="LightGray" PreviewTextInput="BinaryOnly"/>
             <Button x:Name="ClearButton1" Click="ClearButton_Click" Content="C" Width="25" Height="20" Margin="5, 0, 0, 10" Background="DimGray" BorderBrush="LightGray">
                 <Button.Resources>
                     <Style TargetType="Border">
@@ -35,7 +35,7 @@
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <TextBox x:Name="TextBox2" TextWrapping="Wrap" Text="" Width="385" Margin="0,0,0,10" HorizontalContentAlignment="Right" BorderBrush="LightGray"/>
+            <TextBox x:Name="TextBox2" TextWrapping="Wrap" Text="" Width="385" Margin="0,0,0,10" HorizontalContentAlignment="Right" BorderBrush="LightGray" PreviewTextInput="BinaryOnly"/>
             <Button x:Name="ClearButton2" Click="ClearButton_Click" Content="C" Width="25" Height="20" Margin="5, 0, 0, 10" Background="DimGray" BorderBrush="LightGray">
                 <Button.Resources>
                     <Style TargetType="Border">
@@ -125,7 +125,7 @@
         
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Label FontSize="12" Foreground="Black" Margin="0, 0, 35, 10" FontWeight="Bold">Bin</Label>
-            <TextBox x:Name="TextBoxBin" TextWrapping="Wrap" Text="" Width="385" Margin="0,0,0,10" HorizontalContentAlignment="Right" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Visible"
+            <TextBox x:Name="TextBoxBin" TextWrapping="NoWrap" Text="" Width="385" Margin="0,0,0,10" HorizontalContentAlignment="Right" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Visible"
                      BorderBrush="LightGray" IsReadOnly="True"/>
         </StackPanel>
         
